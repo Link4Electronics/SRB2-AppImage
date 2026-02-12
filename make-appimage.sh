@@ -9,7 +9,7 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://git.do.srb2.org/STJr/SRB2/-/raw/next/srb2.png?ref_type=heads
-export DESKTOP=/usr/share/applications/srb2.desktop
+export DESKTOP=/usr/share/applications/srb2-opengl.desktop
 
 # Deploy dependencies
 quick-sharun /usr/bin/srb2
