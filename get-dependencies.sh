@@ -17,8 +17,9 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+sed -i -e 's|-O2|-O2 -std=gnu11|' /etc/makepkg.conf
 make-aur-package srb2-data
-PRE_BUILD_CMDS='sed -i "/build() {/a \  export CFLAGS=\"\$CFLAGS -std=gnu11\"" ./PKGBUILD'  make-aur-package srb2
+make-aur-package srb2
 
 # If the application needs to be manually built that has to be done down here
 
